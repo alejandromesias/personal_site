@@ -1,0 +1,41 @@
+/*
+*
+*Estilos para CelebrarProject
+*Model App A
+*Alejandro Mesias
+*indice de recursos
+*/
+
+/*librería de colores*/
+
+:root {
+  --azul: #3b5c9b;
+  --melon: #ffb387;
+  --papiro: #fff4e0;
+  --blanco: #fff;
+  --melonForte: #ff9544;
+  --melonShade: rgba(137,114,100,0.3);
+
+  --azulFade: rgba(59,92,155,0.9);
+  --melonFade: rgba(244,179,135,0.9);
+  --papiroFade: rgba(255,244,244,0.9);
+  --blancoFade: rgba(255,255,255,0.9);
+
+}
+
+/* custom fonts */
+@font-face {
+  font-family: 'AmarilloFont';
+  src: url('../mvfonts/Amarillo.ttf');
+  src: url('../mvfonts/Amarillo.otf');
+}
+
+@font-face {
+  font-family: 'ChampFont';
+  src: url('../mvfonts/Champ.ttf');
+}
+
+@font-face {
+  font-family: 'ChampBoldFont';
+  src: url('../mvfonts/ChampBold.ttf');
+}
