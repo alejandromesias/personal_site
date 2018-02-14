@@ -7,4 +7,4 @@ class HomePageTest(TestCase):
       self.assertTemplateUsed(response, 'projects/am_home.html')
       self.assertTemplateUsed(response, 'projects/base.html')
       self.assertTemplateUsed(response, 'projects/navigation.html')
-      self.assertTemplateUsed(response, 'projects/footer.html')
+      #self.assertTemplateUsed(response, 'projects/footer.html')

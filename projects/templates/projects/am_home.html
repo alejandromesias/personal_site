@@ -1,10 +1,51 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Alejandro Mesias</title>
-  </head>
-  <body>
-    <h1>página de Alejandro Mesias</h1>
-  </body>
-</html>
+{% extends "projects/base.html" %}
+{% load staticfiles %}
+{% block page_block %}
+<header class="main-header d-flex">
+      <div class="container my-auto">
+          <div class="col-8 text-center mx-auto">
+            <p class="header-text mb-0">
+              <br><br><br><br>
+              {{marquesina}}
+            </p>
+          </div>
+      </div>
+    </header>
+
+  <section class="padded-section-small">
+    <div class="container">
+        <div class="text-center">
+          <h3 class="section-title-light" id="demo"></h3>
+          <h3 class="section-title-light">para nuestra boda</h3>
+          <br><br>
+          <a class="btn btn-primary btn-lg js-scroll-trigger">
+            Confirma tu asistencia
+          </a>
+        </div>
+    </div>
+  </section>
+
+
+    <section class="padded-section-normal" id="ceremonia">
+      <div class="container" >
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+
+            <h2 class="section-title-light">Ceremonia</h2>
+            <hr class="hr-dark my-4">
+            <p class= "mb-4 plain-text">
+              {{nombre_ceremonia}}<br><br>
+              {{hora_ceremonia}}<br><br>
+              {{direccion_ceremonia}}<br><br>
+              <a class="btn btn-primary" href="#mapas">Ver mapa</a>
+
+            </p>
+            <img class = "img-fluid rounded-circle" src="{% static "projects/img/iglesia_condado.jpg" %}" alt="imagen ceremonia">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}
