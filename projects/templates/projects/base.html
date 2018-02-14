@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,10 +18,10 @@
     <link href="static/projects/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="static/projects/css/resources_style.css" rel="stylesheet">
-    <link href="static/projects/css/body_style.css" rel="stylesheet">
-    <link href="static/projects/css/navigation_style.css" rel="stylesheet">
-    <link href="static/projects/css/footer_style.css" rel="stylesheet">
+    <link href="{% static "projects/css/resources_style.css" %}" rel="stylesheet">
+    <link href="{% static "projects/css/body_style.css" %}" rel="stylesheet">
+    <link href="{% static "projects/css/navigation_style.css" %}" rel="stylesheet">
+    <link href="{% static "projects/css/footer_style.css" %}" rel="stylesheet">
 
   </head>
 
@@ -32,16 +33,17 @@
   </body>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="static/projects/vendor/jquery/jquery.min.js"></script>
-  <script src="static/projects/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{% static "projects/vendor/jquery/jquery.min.js" %}"></script>
+  <script src="{% static "projects/vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="static/projects/vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="static/projects/vendor/scrollreveal/scrollreveal.min.js"></script>
-  <script src="static/projects/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Plugin JavaScript -->
+  <script src="{% static "projects/vendor/jquery-easing/jquery.easing.min.js" %}"></script>
+  <script src="{% static "projects/vendor/scrollreveal/scrollreveal.min.js" %}"></script>
+  <script src="{% static "projects/vendor/magnific-popup/jquery.magnific-popup.min.js" %}"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="static/projects/js/creative.min.js"></script>
-  <script src="static/projects/js/countdown.js"></script>
+    <!-- Custom scripts for this template -->
+  <script src="{% static "projects/js/creative.min.js" %}"></script>
+  <script src="{% static "projects/js/countdown.js" %}"></script>
+
 
 </html>
