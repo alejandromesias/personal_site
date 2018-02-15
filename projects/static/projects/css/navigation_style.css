@@ -8,20 +8,26 @@
 
 
 #mainNav {
-  border-bottom: 1px solid var(--melonShade);
-  background-color: var(--melonFade);
+  border-bottom: 1px solid var(--blueShade);
+  background-color: var(--blueFade);
   font-family: 'ChampBoldFont', Tahoma ;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  letter-spacing: 0.1rem;
 }
 
 /*logo de la barra, mod fuente y tamaño, color en movil*/
 #mainNav .navbar-brand {
+  font-size: 2rem;
   font-weight: 400;
   text-transform: ;
-  color: var(--papiro);
-  font-family: 'AmarilloFont', Georgia, Arial;
+  color: var(--blanco);
+  font-family: 'bigNoodle', Tahoma;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -34,7 +40,7 @@
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: ;
-    color: var(--papiro);
+    color: var(--blanco);
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
@@ -85,7 +91,8 @@
 
     /* Logo en modo full-screen*/
     #mainNav .navbar-brand {
-        color: var(--papiroFade);
+        color: var(--blancoFade);
+        font-size: 3rem;
     }
 
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -98,22 +105,22 @@
 
     #mainNav .navbar-nav > li.nav-item > a.nav-link,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-        color: var(--papiroFade);
+        color: var(--blancoFade);
     }
 
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-          color: var(--melonFade);
+          color: var(--blueFade);
     }
 
     /*color de la barra al hacer scroll*/
     #mainNav.navbar-shrink {
-        border-bottom: 1px solid var(--melonShade);
-        background-color: var(--melonFade);
+        border-bottom: 1px solid var(--blueShade);
+        background-color: var(--blueFade);
     }
 
     #mainNav.navbar-shrink .navbar-brand {
-          color: var(--papiro);
+          color: var(--blanco);
     }
 
     #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
@@ -122,7 +129,7 @@
 
     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
-          color: var(--papiro);
+          color: var(--blanco);
     }
 
     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,

@@ -14,10 +14,10 @@
   --papiro: #fff4e0;
   --blanco: #fff;
   --melonForte: #ff9544;
-  --melonShade: rgba(137,114,100,0.3);
+  --blueShade: rgba(49,218,226,0.3);
 
   --azulFade: rgba(59,92,155,0.9);
-  --melonFade: rgba(244,179,135,0.9);
+  --blueFade: rgba(48,135,186,0.9);
   --papiroFade: rgba(255,244,244,0.9);
   --blancoFade: rgba(255,255,255,0.9);
 
@@ -25,9 +25,8 @@
 
 /* custom fonts */
 @font-face {
-  font-family: 'AmarilloFont';
-  src: url('../mvfonts/Amarillo.ttf');
-  src: url('../mvfonts/Amarillo.otf');
+  font-family: 'bigNoodle';
+  src: url('../mvfonts/bigNoodle.ttf');
 }
 
 @font-face {

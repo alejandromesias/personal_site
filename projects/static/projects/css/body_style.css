@@ -10,7 +10,7 @@
 .main-header {
   padding-top: 8rem;
   padding-bottom: 6rem;
-  background-image: url("../img/portada.jpg");
+  background-image: url("../img/portada_board.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -31,7 +31,7 @@
 }
 @media (min-width: 992px) {
   .main-header {
-    height: 100vh;
+    height: 80vh;
     min-height: 650px;
     padding-top: 0;
     padding-bottom: 0; }
@@ -104,7 +104,7 @@
 .hr-light {
   max-width: 50px;
   border-width: 3px;
-  border-color: var(--melon);
+  border-color: var(--azul);
 }
 
 .hr-dark {
@@ -118,7 +118,7 @@
 
 .section-title-light {
   margin-top: 0;
-  color: var(--melon);
+  color: var(--azul);
   font-family: 'ChampBoldFont',Tahoma, Arial, sans-serif;
 }
 
@@ -137,7 +137,7 @@
 }
 
 .link-text {
-  color: var(--melon);
+  color: var(--azul);
   font-size: 1.2rem;
   font-weight: 500;
   font-family: Tahoma, Helvetica, Verdana;
@@ -156,11 +156,11 @@
   font-family: 'ChampBoldFont', 'Helvetica Neue', Arial, sans-serif; }
 
 .btn-primary {
-  background-color: var(--melon);
-  border-color: var(--melon); }
+  background-color: var(--azul);
+  border-color: var(--azul); }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     color: var(--blancoFade);
-    background-color: var(--melonForte) !important; }
+    background-color: var(--azulForte) !important; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem var(--azul) !important; }
 
