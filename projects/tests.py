@@ -27,8 +27,6 @@ class HomePageTest(TestCase):
         self.assertEqual(test_project.extra_text, "extra text test")
 
 
-
-
-    def test_view_has_project_title(self):
-        response = self.client.get('/')
-        self.assertContains(response,'titulo prueba1')
+    #def test_view_has_project_title(self):
+    #    response = self.client.get('/')
+    #    self.assertContains(response,'titulo prueba1')
