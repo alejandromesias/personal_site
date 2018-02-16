@@ -8,6 +8,6 @@ class HomePageTest(TestCase):
         self.assertTemplateUsed(response, 'projects/base.html')
         self.assertTemplateUsed(response, 'projects/navigation.html')
 
-    def test_view_has_projects(self):
+    def test_view_has_project_title(self):
         response = self.client.get('/')
-        self.assertContains(response,'testeando')
+        self.assertContains(response,'titulo prueba1')
