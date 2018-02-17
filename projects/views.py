@@ -9,11 +9,14 @@ class ProjectsView(TemplateView):
 
     def get(self, request, *args, **kwargs):
 
-        #test_project1 = Project("titulo prueba1", "descripcion prueba1")
-        #test_project2 = Project("titulo prueba2", "descripcion prueba2")
+        test_project1 = Project("titulo prueba1", "descripcion prueba1")
+        test_project2 = Project("titulo prueba2", "descripcion prueba2")
+
+        projects_list = [test_project1,
+                        test_project2]
 
         context = {
-                #'test_project': test_project1,
+                'projects_list': projects_list,
                 }
 
         return self.render_to_response(context)

@@ -36,10 +36,10 @@
             <h2 class="section-title-light">Ceremonia</h2>
             <hr class="hr-dark my-4">
             <p class= "mb-4 plain-text">
-              {{test_project.title}}<br><br>
-              {{hora_ceremonia}}<br><br>
-              {{direccion_ceremonia}}<br><br>
-              <a class="btn btn-primary" href="#mapas">Ver mapa</a>
+              {% for project in projects_list %}
+                <srtrong>{{ project.title }}</strong>
+              {% endfor %}
+
 
             </p>
             <img class = "img-fluid rounded-circle" src="{% static "projects/img/iglesia_condado.jpg" %}" alt="imagen ceremonia">

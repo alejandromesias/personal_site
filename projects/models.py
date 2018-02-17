@@ -6,11 +6,11 @@ class Project(object):
     def __init__(self,
                  title,
                  description,
-                 picture,
-                 repository,
-                 published,
-                 extra_link,
-                 extra_text):
+                 picture = "",
+                 repository = "",
+                 published = "",
+                 extra_link = "",
+                 extra_text = ""):
         self.title = title
         self.description = description
         self.picture = picture
