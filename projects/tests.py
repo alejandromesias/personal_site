@@ -36,4 +36,4 @@ class HomePageTest(TestCase):
 
     def test_view_has_project_title(self):
         response = self.client.get('/')
-        self.assertContains(response,'titulo prueba1')
+        self.assertContains(response,'celebrar.vip')

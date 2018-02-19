@@ -9,11 +9,30 @@ class ProjectsView(TemplateView):
 
     def get(self, request, *args, **kwargs):
 
-        test_project1 = Project("titulo prueba1", "descripcion prueba1")
-        test_project2 = Project("titulo prueba2", "descripcion prueba2")
+        tesis_project  =  Project("Companion Robot",
+                                   "The Companion Robot based on Kinect Sensor is my Bachelor’s degree project. Together with my mate we built a wheeled robot  capable of visually following a person around, while carrying a 5Kg payload. The people tracking system was made possible thanks to Microsoft’s Kinect sensor and the Kinect SDK. The developed human shape recognition program ran on a on-board laptop computer and the main control program on a Microcontroller chip. The setup process and remote control was available through an android mobile app. (2012)",
+                                   "https://drive.google.com/uc?export=view&id=1zBm0xsbjL5vDqrEA40hW4-rUJY_DKWcg",
+                                   "",
+                                   "https://www.youtube.com/watch?v=0gv6BbJWOB8",
+                                   "http://bibdigital.epn.edu.ec/handle/15000/17140",)
 
-        projects_list = [test_project1,
-                        test_project2]
+        celebrar_project = Project("celebrar.vip",
+                                   "Celebrar.vip is a Django based site meant to host web pages for events, such as weddings or anniversaries. The current functionalities of an event web page is to display further information about it in a aesthetic manner and to offer a RSVP channel for the guests. The site is structured as a Django project with Django apps for each event web page. Although each event is particular, work is being done to build the apps in a way that can be easily customizable for each single event. (2018)",
+                                   "https://drive.google.com/uc?export=view&id=1bIm204RsBTYn-4vqwY7ASJaKT_TSNiez",
+                                   "https://github.com/alejandromesias/celebrar_py",
+                                   "http://www.celebrar.vip/modelapp_a",)
+
+        sspot_project  =  Project("SSPOT Parking app",
+                                   "Sspot is a young start-up that strives to help Quito with its car parking issues. Sspot Parking is a mobile app that can tell drivers where parking places are based on their location or destination. I have been responsible for the development of the native Front-End apps for both Android and iOS, and I have also been involved in integrating them to the Node.js backend through the REST API. (2017)",
+                                   "https://drive.google.com/uc?export=view&id=1k4Wf66crtk8oWqHn_7_pxayAzfhYqDyF",
+                                   "",
+                                   "https://play.google.com/store/apps/details?id=com.sspot.www.sspotparkin&hl=en",
+                                   "http://www.sspot-app.com/conductores",)
+
+
+        projects_list = [tesis_project,
+                        celebrar_project,
+                        sspot_project,]
 
         context = {
                 'projects_list': projects_list,

@@ -14,39 +14,56 @@
       </div>
 </header>
 
-  <section class="padded-section-small">
-    <div class="container">
-        <div class="text-center">
-          <h3 class="section-title-light" id="demo"></h3>
-          <h3 class="section-title-light">para nuestra boda</h3>
-          <br><br>
-          <a class="btn btn-primary btn-lg js-scroll-trigger">
-            Confirma tu asistencia
-          </a>
-        </div>
+<section class="padded-section-small" id="things">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h1 class="section-title-light">Things I've done</h1>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-
-    <section class="padded-section-normal" id="ceremonia">
+  {% for project in projects_list %}
+    <section class="padded-section-normal">
       <div class="container" >
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
 
-            <h2 class="section-title-light">Ceremonia</h2>
+            <h2 class="section-title-light">{{ project.title }}</h2>
             <hr class="hr-dark my-4">
             <p class= "mb-4 plain-text">
-              {% for project in projects_list %}
-                <srtrong>{{ project.title }}</strong>
-              {% endfor %}
-
-
+              {{project.description}}
             </p>
-            <img class = "img-fluid rounded-circle" src="{% static "projects/img/iglesia_condado.jpg" %}" alt="imagen ceremonia">
 
-            </div>
+            {% if project.picture != "" %}
+              <img class = "img-fluid" width="600" src="{{project.picture}}" alt="project image">
+            </br></br>
+            {% endif %}
+
+            {% if project.repository != "" %}
+              <p class= "mb-4 plain-text">
+                Github repository for this project:
+                <a class="link-text" target="blank" href="{{project.repository}}">{{project.repository}}</a>
+              </p>
+            {% endif %}
+
+            {% if project.published != "" %}
+              <p class= "mb-4 plain-text">
+                Published sample of the project:
+                <a class="link-text" target="blank" href="{{project.published}}">{{project.published}}</a>
+              </p>
+            {% endif %}
+
+            {% if project.extra_link != "" %}
+              <p class= "mb-4 plain-text">
+                Further information about this project:
+                <a class="link-text" target="blank" href="{{project.extra_link}}">{{project.extra_link}}</a>
+              </p>
+            {% endif %}
           </div>
         </div>
       </div>
     </section>
+  {% endfor %}
 {% endblock %}
