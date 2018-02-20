@@ -29,10 +29,18 @@ class ProjectsView(TemplateView):
                                    "https://play.google.com/store/apps/details?id=com.sspot.www.sspotparkin&hl=en",
                                    "http://www.sspot-app.com/conductores",)
 
+        personal_project = Project("alejandromesias.com",
+                                   "This very same site. It has been built using Django and introducing first steps in TDD through python’s unittest library and functional testing with selenium. (2018)",
+                                   "https://drive.google.com/uc?export=view&id=1s8_qee09spgnfBfYkLVUNDPh48fT9-9a",
+                                   "https://github.com/alejandromesias/personal_site",
+                                   "http://www.alejandromesias.com",)
+
+
 
         projects_list = [tesis_project,
                         celebrar_project,
-                        sspot_project,]
+                        sspot_project,
+                        personal_project,]
 
         context = {
                 'projects_list': projects_list,
