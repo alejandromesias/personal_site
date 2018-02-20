@@ -35,12 +35,19 @@ class ProjectsView(TemplateView):
                                    "https://github.com/alejandromesias/personal_site",
                                    "http://www.alejandromesias.com",)
 
+        engtranslator_project = Project("engineering translators",
+                                   "Engineering translators is a web app developed for a group of translators freelancers who had a glossary of technical terms translated to spanish and wanted to display it on the internet. It was developed as a Django project. Of special interest are the relationships between terms, themes, chapters, related terms, synonyms, etc, that needed to be addressed when defining the models for the Database.(2017)",
+                                   "https://drive.google.com/uc?export=view&id=1NYKOoIfKtA6SBjDrj1SSnZAfYD3w6rTk",
+                                   "https://github.com/alejandromesias/engtranslators",
+                                   "http://amesias.pythonanywhere.com/",)
+
 
 
         projects_list = [tesis_project,
                         celebrar_project,
                         sspot_project,
-                        personal_project,]
+                        personal_project,
+                        engtranslator_project,]
 
         context = {
                 'projects_list': projects_list,
